@@ -34,7 +34,7 @@ class Validate(webapp2.RequestHandler):
             raise ValueError("email query param not provided.")
 
         self.jsonify({'email': email,
-                      'is_valid': validate_email(email, verify=True)
+                      'is_valid': validate_email(email, verify=True, debug=True)
                       })
 
 
