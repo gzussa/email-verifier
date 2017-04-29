@@ -40,7 +40,7 @@ apt-get update
 apt-get install -yq ca-certificates git nodejs build-essential supervisor
 
 # Install Python
-apt-get install python
+apt-get install python python-pip
 
 # Get the application source code from GitHub.
 # git requires $HOME and it's not set during the startup script.
