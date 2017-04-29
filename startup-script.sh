@@ -37,10 +37,10 @@ service google-fluentd restart &
 
 # Install dependencies from apt
 apt-get update
-apt-get install -yq ca-certificates git nodejs build-essential supervisor
+apt-get install -yq ca-certificates git build-essential supervisor
 
 # Install Python
-apt-get install python python-pip
+apt-get install -yq python python-pip
 
 # Get the application source code from GitHub.
 # git requires $HOME and it's not set during the startup script.
